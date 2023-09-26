@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font font-family: 'poppins' ,sans-serif;
+}
+/* header section started
+---------------------------------- */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+.header .logo{
+    font-size: 25px;
+    font-family: 'Sriracha',cursive;
+    color:#000;
+    text-decoration: none;
+    margin-left: 30px;
+
+}
+.nav-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+    padding: 4px;
+}
+.nav-items a{
+    text-decoration: none;
+    color: #000;
+    padding: 35px 20px;
+}
+/* header section ended
+------------------------------------ */
+/* main section started---
+---------------------------------------- */
+  .main {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    background: url("/assets/images/background\ image.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .main h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: #fff;
+    font-size: bold;
+    margin: 0;
+  }
+
+  .main p {
+    font-size: 20px;
+    color: #d1d1d1;
+    margin: 20px 0;
+  }
+
+  .main button {
+    background-color: #5fdcf6;
+    color: #000;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+  }
+
+  .achievements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 80px;
+  }
+
+  .achievements .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .achievements .work i {
+    font-size: 50px;
+    color: #333333;
+    border-radius: 50%;
+    border: 2px solid #333333;
+    padding: 12px;
+    margin: 3px;
+  }
+  .achievements .img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .achievements .work .work-heading {
+    font-size: 20px;
+    color: #333333;
+    text-transform: uppercase;
+    margin margin-top: 10px;
+  }
+
+  .achievements .work .work-text {
+    font-size: 15px;
+    color: #585858;
+    margin: 10px 0;
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    border-top: 2px solid #eeeeee;
+  }
+
+  .about-me img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .about-me-text h2 {
+    font-size: 30px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .about-me-text p {
+    font-size: 15px;
+    color: #585858;
+    margin: 10px 0;
+  }
+  
+  
+  /* main section ended
+  -------------------------------- */
+  /* footer section started
+  --------------------------------- */
+ footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #302f49;
+  padding: 40px 80px;
+}
+
+.footer .copy {
+  color: #fff;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #a1a1a1;
+  padding: 10px 20px;
+}
+.bottom-links .img-2{
+  width: 40px;
+  height: 4%;
+  padding: 10px;
+}
+/* footer section ended----------
+--------------------------------------------- */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Change background color if needed */
+  }
+
+  .nav-items a {
+    padding: 15px 0; /* Adjust padding as needed */
+    display: block; /* Display links as blocks for better spacing */
+    border-bottom: 1px solid #ddd; /* Add a separator between links */
+  }
+}
+/* Your existing CSS code */
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .main {
+    height: auto;
+    padding: 40px; /* Adjust the padding for smaller screens */
+  }
+
+  .main h1 {
+    font-size: 40px;
+  }
+
+  .main p {
+    font-size: 18px;
+    margin: 15px 0; /* Adjust the margin for smaller screens */
+  }
+
+  .achievements {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adjust the padding for smaller screens */
+  }
+
+  .achievements .work {
+    padding: 20px; /* Adjust the padding for smaller screens */
+  }
+
+  .achievements .work i {
+    font-size: 40px;
+    padding: 10px;
+    margin: 2px;
+  }
+
+  .achievements .work .work-heading {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  .achievements .work .work-text {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .about-me {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-me img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .about-me-text h2 {
+    font-size: 24px;
+  }
+
+  .about-me-text p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+}
+/* Your existing CSS code */
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer .copy {
+    text-align: center; /* Center-align the text */
+    margin-top: 10px; /* Adjust the margin for spacing */
+  }
+
+  .bottom-links {
+    flex-direction: column;
+    align-items: center; /* Center-align the links */
+    padding: 20px 0;
+  }
+
+  .bottom-links .links {
+    padding: 10px 0; /* Adjust the padding for spacing */
+  }
+
+  .bottom-links .links span {
+    font-size: 16px; /* Decrease the font size for smaller screens */
+    margin: 8px 0;
+  }
+
+  .bottom-links .links a {
+    padding: 5px 0; /* Adjust the padding for spacing */
+  }
+
+  .bottom-links .img-2 {
+    width: 30px;
+    height: auto;
+    padding: 5px;
+  }
+}
+
